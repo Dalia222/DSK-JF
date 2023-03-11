@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit your profile</title>
+    <link rel="icon" href="images/DSK-JF-drak-transparent-logo.png" />
+    <link rel="stylesheet" href="./style/editProfile.css" />
+  </head>
+  <body>
+    <main class="has-dflex-center">
+      <section>
+        <div class="lx-container-70">
+          <div class="lx-row">
+            <h1 class="title">Edit your profile</h1>
+          </div>
+          <div class="lx-row align-stretch">
+            <div class="lx-column column-user-pic">
+              <div class="profile-pic bs-md">
+                <h1 class="pic-label">Profile picture</h1>
+                <div class="pic bs-md">
+                  <img
+                    src="./images/user.png"
+                    alt=""
+                    width="4024"
+                    height="6048"
+                    loading="lazy"
+                  />
+                  <a id="change-avatar" class="lx-btn"
+                    ><i class="fas fa-camera-retro"></i>&nbsp;&nbsp;Change your
+                    profile picture.</a
+                  >
+                </div>
+                <div class="pic-info">
+                  <p>
+                    <i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;This
+                    photo will appear on the platform, in your contributions or
+                    where it is mentioned.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lx-column">
+              <form action="get">
+                <div class="fieldset">
+                  <label for="user-name">Name</label>
+                  <div class="input-wrapper">
+                    <span class="icon"><i class="fas fa-user"></i></span>
+                    <input
+                      type="text"
+                      id="user-name"
+                      value=""
+                      placeholder="username"
+                      autocomplete="username"
+                      required
+                    />
+                  </div>
+                  <div id="user-name-helper" class="helper">
+                    <p>
+                      Your name can appear on the platform, in your
+                      contributions or where it is mentioned.
+                    </p>
+                  </div>
+                </div>
+                <div class="fieldset">
+                    <label for="user-name">Bio</label>
+                    <div class="input-wrapper">
+                      <span class="icon"><i class="fas fa-user"></i></span>
+                      <input
+                        type="text"
+                        id="user-name"
+                        value=""
+                        placeholder="Tell us a little bit about yourself"
+                        autocomplete="username"
+                        required
+                      />
+                    </div>
+                <!-- <div class="fieldset">
+                  <label for="user-id">Registration</label>
+                  <div class="input-wrapper">
+                    <span class="icon"
+                      ><i class="fas fa-address-card"></i
+                    ></span>
+                    <input type="number" id="user-id" value="" required />
+                  </div>
+                  <div id="user-id-helper" class="helper"></div>
+                </div> -->
+                <div class="fieldset">
+                  <label for="email">E-mail</label>
+                  <div class="input-wrapper">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <input
+                      type="email"
+                      id="email"
+                      value=""
+                      placeholder="type your public email"
+                      autocomplete="username"
+                    />
+                  </div>
+                  <div id="email-helper" class="helper"></div>
+                </div>
+                <div class="fieldset">
+                  <label for="pass">Change Password</label>
+                  <div class="input-wrapper">
+                    <span class="icon"><i class="fas fa-key"></i></span>
+                    <input
+                      type="password"
+                      id="pass"
+                      value=""
+                      autocomplete="current-password"
+                    />
+                  </div>
+                  <label for="pass">Confirm Password</label>
+                  <div class="input-wrapper">
+                    <span class="icon"><i class="fas fa-key"></i></span>
+                    <input
+                      type="password"
+                      id="pass"
+                      value=""
+                      autocomplete="current-password"
+                    />
+                  </div>
+                  <div id="pass-helper" class="helper"></div>
+                </div>
+
+                <div class="actions">
+                  <a id="cancel" class="lx-btn"
+                    ><i class="fas fa-ban"></i>&nbsp;&nbsp;Cancel</a
+                  >
+                  <a id="clear" class="lx-btn"
+                    ><i class="fas fa-broom"></i>&nbsp;&nbsp;Clean</a
+                  >
+                  <a id="save" class="lx-btn"
+                    ><i class="fas fa-save"></i>&nbsp;&nbsp;Save</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+      defer
+      crossorigin="anonymous"
+      data-search-pseudo-elements
+    ></script>
+  </body>
+</html>
