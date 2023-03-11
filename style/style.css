@@ -82,3 +82,53 @@ nav {
   color: black;
   text-decoration: none;
 }
+
+
+/* Myprojects */
+.MyProjects h4{
+  font-size: 20px;
+  padding: 7px;
+  padding-top: 10px;
+}
+.MyProjects img{
+  border-radius: 5px;
+  width: 70px;
+  margin: 5px;
+  
+}
+.MyProjects ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.MyProjects li{
+  border: solid #ddd 1.5px;
+  width: 200px;
+  height: 180px;
+  border-radius: 5px;
+  float: left;
+  margin: 7px;
+  text-align: center;
+  
+}
+.MyProjects h5{
+  border-top:solid 1px #ddd;
+  padding-bottom: 2px;
+  padding-top: 7px;
+  color:#5f5e5e ;
+}
+.P-img{
+  height: 100px;
+  background-color: #f1f3f4;
+
+}
+.MyProjects {
+  color: #767575;
+}
+.MyProjects li:hover{
+  background-color: rgba(26, 115, 232, 0.379);
+  border-color: rgb(26,115,232);
+  
+}
+
+
