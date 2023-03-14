@@ -43,8 +43,8 @@ body{
     }
     
     .nav-borders .nav-link.active {
-        color: #0061f2;
-        border-bottom-color: #0061f2;
+        color: #00f224;
+        border-bottom-color: #00f29d;
     }
     .nav-borders .nav-link {
         color: #69707a;
@@ -60,32 +60,10 @@ body{
     }
 
     button{
-          /* background: #5E5DF0;
-          border-radius: 999px;
-          box-shadow: #5E5DF0 0 10px 20px -10px;
-          box-sizing: border-box;
-          color: #FFFFFF;
-          cursor: pointer;
-          font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 24px;
-          opacity: 1;
-          outline: 0 solid transparent;
-          padding: 8px 10px;
-          user-select: none;
-          -webkit-user-select: none;
-          touch-action: manipulation;
-          width: fit-content;
-          word-break: break-word;
-          border: 0;
- */
-
           /* testing something */
-  background-image: linear-gradient(144deg,#9a17f8, #2000ed 50%,#00DDEB);
-  /* background: #5E5DF0; */
+  background-image: linear-gradient(144deg,#00b90c, #96ed00 50%,#17f8b1);
   border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-shadow: #71f05d 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   font-weight: bold;
@@ -104,7 +82,7 @@ body{
   word-break: break-word;
   border: 0;
     }
-            
+    
 .clear_btn{
     color: white;
     background-image: linear-gradient(144deg,#ff0000, #ff6c6c 50%,#f80000);
@@ -127,68 +105,7 @@ body{
     word-break: break-word;
     border: 0;
       }
-
-
-        
-/*     
-        @mixin object-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          
-          
-          $circleSize: 165px;
-          $radius: 100px;
-          $shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
-          $fontColor: rgb(250, 250, 250);
-          
-          .profile-pic {
-            color: transparent;
-            transition: all 0.3s ease;
-            @include object-center;
-            position: relative;
-            transition: all 0.3s ease;
-          
-            input {
-              display: none;
-            }
-          
-            img {
-              position: absolute;
-              object-fit: cover;
-              width: $circleSize;
-              height: $circleSize;
-              box-shadow: $shadow;
-              border-radius: $radius;
-              z-index: 0;
-            }
-          
-            .-label {
-              cursor: pointer;
-              height: $circleSize;
-              width: $circleSize;
-            }
-          
-            :hover {
-              .-label {
-                @include object-center;
-                background-color: rgba(0, 0, 0, 0.8);
-                z-index: 10000;
-                color: $fontColor;
-                transition: background-color 0.2s ease-in-out;
-                border-radius: $radius;
-                margin-bottom: 0;
-              }
-            }
-        }
-            span {
-              display: inline-flex;
-              padding: 0.2em;
-              height: 2em;
-            }
-        }
-           */
-
+      
            .profile-pic {
             border-radius: 50%;
             height: 150px;
