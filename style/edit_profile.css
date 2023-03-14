@@ -1,3 +1,7 @@
+:root{
+  --succes-color: #2ecc71;;
+  --error-color: #e74c3c;
+}
 body{
     margin-top:20px;
     background-color:#f2f6fc;
@@ -43,8 +47,8 @@ body{
     }
     
     .nav-borders .nav-link.active {
-        color: #00f224;
-        border-bottom-color: #00f29d;
+        color: #0061f2;
+        border-bottom-color: #0061f2;
     }
     .nav-borders .nav-link {
         color: #69707a;
@@ -62,8 +66,9 @@ body{
     button{
           /* testing something */
   background-image: linear-gradient(144deg,#00b90c, #96ed00 50%,#17f8b1);
+  /* background: #5E5DF0; */
   border-radius: 999px;
-  box-shadow: #71f05d 0 10px 20px -10px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   font-weight: bold;
@@ -82,7 +87,6 @@ body{
   word-break: break-word;
   border: 0;
     }
-    
 .clear_btn{
     color: white;
     background-image: linear-gradient(144deg,#ff0000, #ff6c6c 50%,#f80000);
@@ -105,7 +109,7 @@ body{
     word-break: break-word;
     border: 0;
       }
-      
+
            .profile-pic {
             border-radius: 50%;
             height: 150px;
@@ -139,3 +143,31 @@ body{
                   display: none;
                   cursor: pointer;
          }
+
+         /* .error{
+          color: red;
+          font-weight:500;
+        } */
+
+        
+.form-control.success input {
+  border-color: var(--succes-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);    
+}
+
+.form-control span{
+  color: var(--error-color);
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  visibility: hidden;
+}
+
+.form-control.error span{
+  visibility: visible;
+}
+
+
