@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" . href="style/sign-in.css" />
+    <!-- eye icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <title>sign in page</title>
+  </head>
+
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="videos/Network.mp4" type="video/mp4" />
+    </video>
+
+    <div class="all">
+      <h1 id="sign">SIGN IN</h1>
+      <br />
+
+      <div class="wrapper">
+        <form method="post">
+          <div class="input-data">
+            <input
+              type="text"
+              name="username"
+              autofocus=""
+              autocapitalize="none"
+              autocomplete="username"
+              required=""
+              id="id_username"
+            />
+            <div class="underline"></div>
+            <label id="email">Email</label>
+          </div>
+          <br />
+
+          <div class="input-data">
+            <input
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              required=""
+              id="myInput"
+            />
+            <i class="far fa-eye" id="togglePassword"></i>
+            <div class="underline"></div>
+            <label>Password</label>
+          </div>
+
+          <div class="but">
+            <br />
+            <br />
+            <button type="submit" class="button-63" role="button">
+              Log in
+            </button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <div class="social">
+        <img class="circular--square" src="images/google-logo.png" />
+        <img
+          id="facebook"
+          class="circular--square"
+          src="images/Facebook-logo.png"
+        />
+        <img class="circular--square" src="images/twitter-logo.jpg" />
+      </div>
+
+      <a href="sign-up.html">don't have an account ?</a>
+      <br />
+    </div>
+
+    <script src="js/sign-in.js"></script>
+  </body>
+</html>
