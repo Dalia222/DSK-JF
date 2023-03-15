@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="icon" href="images/DSK-JF-drak-transparent-logo.png" />
+    <!-- font awesome file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+    />
+    <!-- main css file -->
+    <link rel="stylesheet" href="../style/project.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <a href="index.html"
+          ><img src="../images/DSK-JF-logo.png" alt="DSK-JF logo"
+        /></a>
+      </div>
+      <div class="nav-search">
+        <input type="search" placeholder="Search" />
+      </div>
+      <div class="profile">
+        <img
+          src="../images/user.png"
+          alt="user image"
+          onclick="showMenu()"
+          id="profilePic"
+        />
+        <div class="list" id="profileMenu">
+          <ul>
+            <li><a href="../html/edit_Profile.html">Manage your account</a></li>
+            <li><a href="#">Switch account</a></li>
+            <li><a href="../html/sign-in.html">Add another account</a></li>
+            <li><a href="#">Trash</a></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="chat">
+      <button class="chat-btn">
+        <i class="material-icons"> comment </i>
+      </button>
+      <div class="chat-popup">
+        <div class="chat-area">
+            <div class="income-msg">
+            <img src="../images/user.png" class="avatar" alt="">
+            <span class="msg"> Hi, How can I help you?</span>
+        </div>
+        </div>
+        <div class="input-area">
+          <input type="text" />
+          <button class="submit"><i class="material-icons"> send</i></button>
+        </div>
+      </div>
+    </section>
+    <script src="../js/project.js"></script>
+  </body>
+</html>
