@@ -1,20 +1,79 @@
 // global variables (for our form validations)
 
 const userName = document.getElementById('Username');
-const firstName = document.getElementById('FirstName');
-const lastName = document.getElementById('LastName');
+const firstName = document.getElementById('First Name');
+const lastName = document.getElementById('Last Name');
 const myForm = document.getElementById('UpdateProfile_Form');
-const email = document.getElementById('EmailAddress');
-const CollegeName = document.getElementById('CollegeName');
+const email = document.getElementById('Email Address');
+const CollegeName = document.getElementById('College Name');
 
 // const errorUsername = document.getElementById('errorUsername');
 // const errorCurrent_Password = document.getElementById('errorCurPassword');
 
+
+// numbering format across all countries
+
+// const phoneInputField = document.querySelector('#Phone');
+//    const phoneInput = window.intlTelInput(phoneInputField, {
+//      utilsScript:
+//        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+//    });
+
+//    const info = document.querySelector(".alert-info");
+
+// function process(event) {
+//  event.preventDefault();
+
+//  const phoneNumber = phoneInput.getNumber();
+
+//  info.style.display = "";
+//  info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+// }
+
+// function getIp(callback) {
+//     fetch('https://ipinfo.io/json?token=<your token>', { headers: { 'Accept': 'application/json' }})
+//       .then((resp) => resp.json())
+//       .catch(() => {
+//         return {
+//           country: 'us',
+//         };
+//       })
+//       .then((resp) => callback(resp.country));
+// }
+
+// countries selections
+
+// mobiscroll.setOptions({
+//     locale: mobiscroll.localeAr,
+//     theme: 'windows',
+//     themeVariant: 'light'
+// });
+
+// var inst = mobiscroll.select('#demo-country-picker', {
+//     display: 'anchored',
+//     filter: true,
+//     itemHeight: 40,
+//     renderItem: function (item) {
+//         return '<div class="md-country-picker-item">' +
+//             '<img class="md-country-picker-flag" src="https://img.mobiscroll.com/demos/flags/' + item.data.value + '.png" />' +
+//             item.display + '</div>';
+//     }
+// });
+
+// mobiscroll.util.http.getJson('https://trial.mobiscroll.com/content/countries.json', function (resp) {
+//     var countries = [];
+//     for (var i = 0; i < resp.length; ++i) {
+//         var country = resp[i];
+//         countries.push({ text: country.text, value: country.value });
+//     }
+//     inst.setOptions({ data: countries });
+// });
+
 // Passwords variables
 
-const curPassword = document.getElementById('cur_Password');
-const newPassword = document.getElementById('new_Password');
-const conPassword = document.getElementById('con_Password');
+const curPassword = document.getElementById('Current Password');
+const newPassword = document.getElementById('New Password');
+const conPassword = document.getElementById('Confirm Password');
 
 //Show input error messages
 function showError(input, message) {

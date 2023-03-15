@@ -13,6 +13,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    
+  <!-- <link rel="stylesheet" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" type="text/css" /> -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css" type="text/css" /> -->
+  <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="container-xl px-4 mt-4">
@@ -81,12 +86,12 @@
                 <div class="row gx-3 mb-3">
                   <!-- Form Group (first name)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="FirstName"
+                    <label class="small mb-1" for="First Name"
                       >First name</label
                     >
                     <input
                       class="form-control"
-                      id="FirstName"
+                      id="First Name"
                       type="text"
                       placeholder="Enter your first name"
                       value=""
@@ -95,12 +100,12 @@
                   </div>
                   <!-- Form Group (last name)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="LastName"
+                    <label class="small mb-1" for="Last Name"
                       >Last name</label
                     >
                     <input
                       class="form-control"
-                      id="LastName"
+                      id="Last Name"
                       type="text"
                       placeholder="Enter your last name"
                       value=""
@@ -112,12 +117,12 @@
                 <div class="row gx-3 mb-3">
                   <!-- Form Group (College name)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="CollegeName"
+                    <label class="small mb-1" for="College Name"
                       >College name</label
                     >
                     <input
                       class="form-control"
-                      id="CollegeName"
+                      id="College Name"
                       type="text"
                       placeholder="Enter your College name"
                       value=""
@@ -127,25 +132,26 @@
                   <!-- Form Group (location)-->
                   <div class="col-md-6">
                     <label class="small mb-1" for="inputLocation"
-                      >Location</label
+                      >Select Your country (Optional)</label
                     >
-                    <input
-                      class="form-control"
-                      id="inputLocation"
-                      type="text"
-                      placeholder="Enter your location (Optional)"
-                      value=""
-                    />
+                    <!-- <input mbsc-input 
+                    class="form-control"
+                    id="demo-country-picker"
+                    data-dropdown="true"
+                    data-input-style="box"
+                    data-label-style="stacked" 
+                    placeholder= "Enter your location (Optional)" /> -->
+                    <select class="selectpicker countrypicker" data-countries="AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE" ></select>
                   </div>
                 </div>
                 <!-- Form Group (email address)-->
                 <div class="mb-3">
-                  <label class="small mb-1" for="EmailAddress"
+                  <label class="small mb-1" for="Email Address"
                     >Email address</label
                   >
                   <input
                     class="form-control"
-                    id="EmailAddress"
+                    id="Email Address"
                     type="email"
                     placeholder="Enter your email address"
                     value=""
@@ -156,27 +162,28 @@
                 <div class="row gx-3 mb-3">
                   <!-- Form Group (phone number)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="inputPhone"
+                    <label class="small mb-1" for="Phone"
                       >Phone number</label
                     >
                     <input
                       class="form-control"
-                      id="inputPhone"
+                      id="Phone"
                       type="tel"
                       placeholder="Enter your phone number"
-                      value=" "
+                      value=""
                     />
+                    
                   </div>
                 <!-- Form Row-->
                 <div class="row gx-3 mb-3">
                   <!-- Form Group (Project)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="inputPhone"
+                    <label class="small mb-1" for="Project"
                       >Project</label
                     >
                     <input
                       class="form-control"
-                      id="inputProject"
+                      id="Project"
                       type="url"
                       placeholder="Upload your project (Optional)"
                       value=" "
@@ -199,42 +206,42 @@
                 </div>
                   <!-- Form Group (Password)-->
                   <div class="col-md-7">
-                    <label class="small mb-1" for="cur_Password"
+                    <label class="small mb-1" for="Current Password"
                       >Current Password</label
                     >
                     <input
                       class="form-control"
-                      id="cur_Password"
+                      id="Current Password"
                       type="Password"
-                      name="cur_Password"
+                      name="Current Password"
                       placeholder="Enter your Current Password"
                       value=""
                     />
                     <span id="errorCurPassword" class="error"></span>
                   </div>
                   <div class="col-md-7">
-                    <label class="small mb-1" for="new_Password"
+                    <label class="small mb-1" for="New Password"
                       >New Password</label
                     >
                     <input
                       class="form-control"
-                      id="new_Password"
+                      id="New Password"
                       type="Password"
-                      name="new_Password"
+                      name="New Password"
                       placeholder="Enter your New Password"
                       value=""
                       />
                       <span id="errorNewPassword" class="error"></span>
                   </div>
                   <div class="col-md-7">
-                    <label class="small mb-1" for="con_Password"
+                    <label class="small mb-1" for="Confirm Password"
                       >Confirm Password</label
                     >
                     <input
                       class="form-control"
-                      id="con_Password"
+                      id="Confirm Password"
                       type="Password"
-                      name="con_Password"
+                      name="Confirm Password"
                       placeholder="Confirm your New Password"
                       value=""
                     />
@@ -255,6 +262,7 @@
         </div>
       </div>
     </div>
+    <script src="../js/edit_profile.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -265,6 +273,9 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/edit_profile.js"></script>
+    <script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script> 
+    <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script> 
+    <!-- <script src="//unpkg.com/bootstrap-select@1.12.4/dist/js/bootstrap-select.min.js"></script>  -->
+    <script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script> 
   </body>
 </html>
