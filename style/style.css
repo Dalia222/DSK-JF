@@ -88,3 +88,36 @@ nav {
   text-decoration: none;
 }
 /* end nav bar */
+
+/* start latest projects */
+.Latest-project {
+  margin: 10px;
+  border-radius: 5px;
+}
+.Latest-project h2 {
+  margin: 10px;
+  font-size: 25px;
+  color: #8f8f90;
+}
+.Latest-project-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 180px;
+  overflow-x: auto;
+}
+.Latest-project-container::-webkit-scrollbar {
+  display: none;
+}
+.latest-project-project-card {
+  border: 1px #bebebe solid;
+  border-radius: 5px;
+  width: 170px;
+  height: 190px;
+  text-align: center;
+  margin: 10px;
+}
+.latest-project-project-card h5 {
+  border-top: #bebebe 1px solid;
+  padding-top: 10px;
+}
+/* end latest projects */
