@@ -84,62 +84,55 @@ nav {
 }
 
 
-<<<<<<< main
-=======
 /* Myprojects */
 
 #Lprojects{
   padding: 10px;
 }
-#center{
+.Latest-project{
   position: relative;
-  padding-left: 7%;
-  padding-right: 10%;
+  /* padding-left: 7%;
+  padding-right: 10%; */
+  margin: 10px;
+  border-radius: 5px;
 }
-.MyProjects{
+.Latest-project h2{
+  margin: 10px;
+  font-size: 25px;
+  color:#8f8f90 ;
+}
+.Latest-project-container{
   display:grid;
-  grid-auto-flow: column;
+  /* flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; */
+  grid-auto-flow: column; 
   grid-auto-columns: 180px;
   overflow-x: auto;
-  margin-left: 7px;
-  /* width: 50%; */
 }
 
-.MyProjects::-webkit-scrollbar {
+.Latest-project-container::-webkit-scrollbar {
   display:none ;
 }
-.MyProjects img{
-  height: 80px;
-  margin: 10px;
-  
-}
-.projects{
+
+.latest-project-project-card{
   border: 1px #bebebe solid;
   border-radius: 5px;
   width: 170px;
   height: 190px;
   text-align: center;
   align-items: center;
-  margin: 5px;
+  margin: 10px;
+  
 }
-.projects h5{
+.latest-project-project-card h5{
   border-top: #bebebe 1px solid;
   padding-top: 10px;
 }
-.P-img{
-  height: 110px;
-  background-color: #f1f3f4;
-}
-.projects:hover {
+
+.latest-project-project-card:hover {
   background-color: rgba(26, 115, 232, 0.227);
   border-color: rgb(26,115,232);
 }
-.projects:hover .P-img{
-  background-color: rgba(26, 115, 232, 0.063);
-}
-.projects:hover h5{
-  color:rgb(24,90,188);
-}
+s
 
-
->>>>>>> main
