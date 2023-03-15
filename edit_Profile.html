@@ -45,21 +45,6 @@
                 </label>
                 <input type="File" name="fileToUpload" id="fileToUpload" />
               </form>
-              <!-- Profile picture image -->
-              <!-- <img
-                class="img-account-profile rounded-circle mb-2"
-                src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg"
-                alt=""
-              /> -->
-
-              <!-- <div class="profile-pic">
-                <label class="-label" for="file">
-                  <span class="glyphicon glyphicon-camera"></span>
-                  <span>Change Image</span>
-                </label>
-                <input id="file" type="file" onchange="loadFile(event)"/>
-                <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output" width="200" />
-              </div> -->
               <!-- Profile picture help block-->
               <div class="small font-italic text-muted mb-4">
                 JPG or PNG no larger than 5 MB
@@ -76,64 +61,68 @@
           <div class="card mb-4">
             <div class="card-header">Account Details</div>
             <div class="card-body">
-              <form>
+              <form id="UpdateProfile_Form">
                 <!-- Form Group (username)-->
                 <div class="mb-3">
-                  <label class="small mb-1" for="inputUsername"
+                  <label class="small mb-1" for="Username"
                     >Username (How your name will appear to other users on the
                     site)</label
                   >
                   <input
                     class="form-control"
-                    id="inputUsername"
+                    id="Username"
                     type="text"
                     placeholder="Enter your username"
                     value=""
                   />
+                  <span id="errorUsername" class="error"></span>
                 </div>
                 <!-- Form Row-->
                 <div class="row gx-3 mb-3">
                   <!-- Form Group (first name)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="inputFirstName"
+                    <label class="small mb-1" for="FirstName"
                       >First name</label
                     >
                     <input
                       class="form-control"
-                      id="inputFirstName"
+                      id="FirstName"
                       type="text"
                       placeholder="Enter your first name"
                       value=""
                     />
+                    <span id="errorFirstname" class="error"></span>
                   </div>
                   <!-- Form Group (last name)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="inputLastName"
+                    <label class="small mb-1" for="LastName"
                       >Last name</label
                     >
                     <input
                       class="form-control"
-                      id="inputLastName"
+                      id="LastName"
                       type="text"
                       placeholder="Enter your last name"
                       value=""
                     />
+                    <span id="errorlastname" class="error"></span>
                   </div>
                 </div>
                 <!-- Form Row        -->
                 <div class="row gx-3 mb-3">
                   <!-- Form Group (College name)-->
                   <div class="col-md-6">
-                    <label class="small mb-1" for="inputOrgName"
+                    <label class="small mb-1" for="CollegeName"
                       >College name</label
                     >
                     <input
                       class="form-control"
-                      id="inputOrgName"
+                      id="CollegeName"
                       type="text"
                       placeholder="Enter your College name"
                       value=""
                     />
+                    <span id="errorCollegeName" class="error"></span>
                   </div>
                   <!-- Form Group (location)-->
                   <div class="col-md-6">
@@ -144,23 +133,24 @@
                       class="form-control"
                       id="inputLocation"
                       type="text"
-                      placeholder="Enter your location"
+                      placeholder="Enter your location (Optional)"
                       value=""
                     />
                   </div>
                 </div>
                 <!-- Form Group (email address)-->
                 <div class="mb-3">
-                  <label class="small mb-1" for="inputEmailAddress"
+                  <label class="small mb-1" for="EmailAddress"
                     >Email address</label
                   >
                   <input
                     class="form-control"
-                    id="inputEmailAddress"
+                    id="EmailAddress"
                     type="email"
                     placeholder="Enter your email address"
                     value=""
                   />
+                  <span id="erroremail"></span>
                 </div>
                 <!-- Form Row-->
                 <div class="row gx-3 mb-3">
@@ -200,7 +190,7 @@
                     <input
                       class="form-control"
                       id="inputBirthday"
-                      type="text"
+                      type="date"
                       name="birthday"
                       placeholder="Enter your birthday"
                       value=""
@@ -209,47 +199,50 @@
                 </div>
                   <!-- Form Group (Password)-->
                   <div class="col-md-7">
-                    <label class="small mb-1" for="Password"
+                    <label class="small mb-1" for="cur_Password"
                       >Current Password</label
                     >
                     <input
                       class="form-control"
                       id="cur_Password"
                       type="Password"
-                      name="Password"
+                      name="cur_Password"
                       placeholder="Enter your Current Password"
                       value=""
                     />
+                    <span id="errorCurPassword" class="error"></span>
                   </div>
                   <div class="col-md-7">
-                    <label class="small mb-1" for="Password"
+                    <label class="small mb-1" for="new_Password"
                       >New Password</label
                     >
                     <input
                       class="form-control"
                       id="new_Password"
                       type="Password"
-                      name="Password"
+                      name="new_Password"
                       placeholder="Enter your New Password"
                       value=""
-                    />
+                      />
+                      <span id="errorNewPassword" class="error"></span>
                   </div>
                   <div class="col-md-7">
-                    <label class="small mb-1" for="Password"
+                    <label class="small mb-1" for="con_Password"
                       >Confirm Password</label
                     >
                     <input
                       class="form-control"
                       id="con_Password"
                       type="Password"
-                      name="Password"
+                      name="con_Password"
                       placeholder="Confirm your New Password"
                       value=""
                     />
+                    <span id="errorConPassword" class="error"></span>
                   </div>
                 </div>
                   <!-- Save changes button-->
-                  <button class="btn btn-primary" type="button">
+                  <button class="btn btn-primary" type="submit">
                       Save changes
                     </button>
                     <button class="clear_btn" type="button">
@@ -272,5 +265,6 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/edit_profile.js"></script>
   </body>
 </html>
