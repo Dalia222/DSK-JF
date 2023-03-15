@@ -1,3 +1,4 @@
+// start nav bar 
 let menu = document.getElementById("profileMenu");
 
 function showMenu() {
@@ -12,3 +13,4 @@ document.addEventListener("click", function (e) {
     menu.classList.remove("active-list");
   }
 });
+// end nav bar
