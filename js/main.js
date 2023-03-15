@@ -1,4 +1,14 @@
+let menu = document.getElementById("profileMenu");
+
 function showMenu() {
-  let menu = document.getElementById("profileMenu");
-  menu.classList.toggle('active-list');
+  menu.classList.toggle("active-list");
 }
+document.addEventListener("click", function (e) {
+  if (
+    menu.classList.contains("active-list") &&
+    !menu.contains(e.target) &&
+    !document.getElementById("profilePic").contains(e.target)
+  ) {
+    menu.classList.remove("active-list");
+  }
+});
