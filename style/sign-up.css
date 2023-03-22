@@ -1,0 +1,228 @@
+body .all{
+    height: 90%;}
+  
+  .all {
+    width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  
+  .all .input-data {
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .all .input-data input {
+    /* top : 100 px; */
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  
+  .input-data input:focus ~ label,
+  .input-data input:valid ~ label {
+    transform: translateY(-25px);
+    font-size: 15px;
+    color: #4158d0;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  .all .input-data label {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-data .underline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+  }
+  
+  .input-data .underline:before {
+    position: absolute;
+    content: "";
+    /* top: 7px; */
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  .input-data .underline {
+    top: 60px;
+  }
+  
+  .input-data input:focus ~ .underline::before,
+  .input-data input:valid ~ .underline::after {
+    transform: scaleX(1);
+  }
+  
+  .input-data input:focus ~ #id_username,
+  .input-data input:valid ~ #id_username {
+    border-bottom: none;
+  }
+  .check * {
+    display: inline;
+  }
+  
+  
+  
+  .circular--square {
+    border-radius: 50%;
+    width: 7%;
+    margin: 10px;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .all {
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid black ; */
+    /* box-shadow: 5px 10px #c7c7c7; */
+    box-shadow: 0 20px 25px 25px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.703);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .all input {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  a {
+    color: blue;
+    font-size: 14px;
+  }
+  
+  .check div {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .but {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .button-63 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .button-63:active,
+  .button-63:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-63 {
+      font-size: 18px;
+      min-width: 196px;
+    }
+  }
+  
+  #id_username,
+  #myInput2 , #myInput{
+    position: relative;
+    top: 8px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #sign {
+    font-family: cursive;
+  }
+  #togglePassword , #togglePassword2 {
+    margin-right: 300px;
+    cursor: pointer;
+    position: relative;
+    left: 303px;
+    bottom: 20px;
+  }
+  #facebook {
+    width: 13%;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
