@@ -134,7 +134,6 @@ function checkPasswordMatch(input1, input2) {
     }
 }
 
-
 myForm.addEventListener('submit', (e) => {
     e.preventDefault();
     checkRequired([userName, email, curPassword, newPassword, conPassword,firstName,lastName,CollegeName]);
