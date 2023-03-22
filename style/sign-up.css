@@ -1,5 +1,6 @@
 body .all {
-  height: 90%;
+  height: 100%;
+
 }
 
 .all {
@@ -11,10 +12,11 @@ body .all {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  position: relative;
+  /* top: 2%;
+right: 30%;  */
+left: 40%; 
+  /* transform: translate(50%, -50%); */
 }
 
 .all .input-data {
