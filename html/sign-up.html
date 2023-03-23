@@ -18,7 +18,7 @@
       <h1 id="sign">SIGN UP</h1>
 
       <div class="wrapper">
-        <form method="post">
+        <form method="post" id="myform">
           <div class="input-data">
             <input
               type="text"
@@ -26,13 +26,12 @@
               autofocus=""
               autocapitalize="none"
               autocomplete="username"
-              required
-              id="id_username"
+              id="fname"
             />
             <div class="underline"></div>
             <label id="email">First Name</label>
           </div>
-          <br />
+          <br /><span id="errorfname" class="error"></span>
           <div class="input-data">
             <input
               type="text"
@@ -40,21 +39,23 @@
               autofocus=""
               autocapitalize="none"
               autocomplete="username"
-              required
-              id="id_username"
+              id="lanme"
             />
             <div class="underline"></div>
             <label id="email">Last Name </label>
           </div>
-          <br />
+            <br /><span id="errorlname" class="error"></span>
+
+       
           <br />
           <div class="input-data">
             Date of birth
 
-            <input type="date" id="id_username" required />
+            <input type="date" id="date" />
             <!-- style="position: absolute ; 
               top: 21px  ; width : 200px;  background-color: rgba(0, 0, 0, 0);" /> -->
-          </div>
+          </div><br>
+          <br /><span id="errordate" class="error"></span>
 
           <br />
 
@@ -65,12 +66,13 @@
               autofocus=""
               autocapitalize="none"
               autocomplete="username"
-              required
-              id="id_username"
+              id="emailin"
             />
             <div class="underline"></div>
             <label id="email">Email</label>
           </div>
+          <br /><span id="erroremail" class="error"></span>
+
           <br />
 
           <div class="input-data">
@@ -78,14 +80,14 @@
               type="password"
               name="password"
               autocomplete="current-password"
-              required
-              id="myInput"
+              id="passwordo"
             />
             <i class="far fa-eye" id="togglePassword"></i>
             <div class="underline"></div>
             <label>Password</label>
-
           </div>
+          <br /><span id="errorpassword" class="error"></span>
+
           <br />
 
           <div class="input-data">
@@ -93,20 +95,24 @@
               type="password"
               name="password"
               autocomplete="current-password"
-              required
-              id="myInput2"
+              id="confirmpassword"
             />
             <i class="far fa-eye" id="togglePassword2"></i>
             <div class="underline"></div>
             <label>Confirm Password</label>
           </div>
-          <br />
+          <br /><span id="errorconpassword" class="error"></span>
+          <br /><span id="matchpasswords" class="error"></span>
 
           <div class="but">
             <br />
             <br />
-            <button type="submit" class="button-63" role="button">
-              Log in
+            <input
+              type="submit"
+              class="button-63"
+              role="button"
+              value="sign up"
+            >
             </button>
           </div>
         </form>
